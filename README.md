@@ -60,7 +60,7 @@ Correlation matrix shows the correlation between features. f_MQMR and m2_MQ are 
  
 ### Model tuning 
 --- 
- Lastly, the model's parameters was tuned using a hyperparameter grid and random searching. 100 iterations were ran with 3-fold cross validation. The following parameters were found to improve F1 score from 88.286% to 88.834%.
+ Lastly, the model's parameters was tuned using a hyperparameter grid and random searching. 100 iterations were ran with 3-fold cross validation. The following parameters were found to improve F1 score from 88.3% to 88.9%.
  | Parameter | Value |
  |-----------|--------|
  | n_estimators    | 100 |
@@ -71,6 +71,13 @@ Correlation matrix shows the correlation between features. f_MQMR and m2_MQ are 
  
 ### Conclusions 
 --- 
+ | Metric | Value |
+ |-----------|--------|
+ | Precision    | 98.9% |
+ | Recall    | 80.8& |
+ | F1    | 88.9% |
+ | AUC_PR    | 90.0% |
+ 
  The two best variant callers were Mutect2 and Vardict which performed with F1 score of 80.4% and 78.0% respectively across all datasets combined. The intersection of these 2 callers (where 1/0 were treated as 0s) resulted in an F1 score of 81.3%. The model performs better than this naive approach which shows that a machine learning approach with the variant callers might lead to a more effective method instead. However, the model performed an F1 score of 82.8% with real2_part2 which could suggest that there is overfitting. However, this is still marginally better than the expected performance of the intersection of the 2 callers.
  
 ### Acknowledgements 
