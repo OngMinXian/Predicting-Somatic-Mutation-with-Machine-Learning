@@ -16,8 +16,9 @@ From the VCF files, a total of 16 features were parsed. These included:
 |     | NLOD | Vardict    | SSC | 
 |     | FILTER_Mutect2 |    | SPV | 
 | Freebayes    | MQM |    | FILTER_Vardict | 
-|     | MQMR | 
-|     | FILTER_Freebayes | 
+|     | MQMR | | |
+|     | FILTER_Freebayes | | |
+
 Notable features that were dropped include: 
 * Chromosome and position 
 * Reference and alternate nucleotide 
